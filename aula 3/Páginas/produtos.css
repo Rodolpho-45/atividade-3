@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  form {
+    display:flex;
+    margin-top: 8rem;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+ .formulario {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 3px solid var(--secundaria);
+      background-color: #808080;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+   input::placeholder,
+textarea::placeholder {
+  color: #ffffff;
+}
+
+    input[type="submit"] {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      background-color: var(--primaria);
+      color: var(--secundaria);
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+  :root {
+      --primaria: #6e04f8;
+      --secundaria: #71ff4e;
+      --background: #131313;
+      --letra: #d9d9d9
+  }
+  
+  body {
+      background-color: var(--background);
+      color: var(--letra);
+  }
+  
+  .cav {
+    color: var(--secundaria);
+    text-decoration: none;
+}  
+
+  aside {
+  font-size: 50px;
+  margin-top: -48px;
+}
+
+   .navegacao {
+  position: fixed;
+  top: 0;
+  background: var(--primaria);
+  width: 100%;
+  z-index: 100;
+  padding: 1rem;
+}
+
+  .menu{
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-top: 5px;
+      gap: 4rem;
+  }
+  
+  .menu-link{
+      text-decoration: none;
+      color: var(--letra);
+      font-weight: 500;
+      position: relative;
+      padding: 0.5rem 0;
+  }
+  
+  .menu-link::after{
+      content: '';
+      height: 2px;
+      width: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: var(--secundaria);
+  }
+  
+  .menu-link:hover::after{
+      width: 100%;
+      transition: 0.5s ease;
+  }
+
+    .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem auto 2rem auto;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--primaria);
+  border-radius: 10px;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(90deg, var(--primaria), #8b00f8);
+  color: var(--secundaria);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+}
+
+.botao:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(90deg, #5200a8, var(--primaria));
+}
+
+.botao:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+  
+
+
+
+
+  .confiscados {
+    margin-top: 10rem;
+    text-align: center;
+  }
+  
+  footer {
+    padding-bottom: 25px;
+    margin-top: 25%;
+    padding-top: 25px; 
+    text-align: center;
+    color: var(--background) ;
+    background-color: var(--secundaria) ; 
+    
+  }
